@@ -1,1 +1,1 @@
-# scrof-gallery
+# scrof-gallery the test project
