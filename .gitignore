@@ -243,3 +243,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+#Libs directories
+src/ScrofGallery.Web/wwwroot/lib/
