@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ScrofGallery.Domain
+namespace ScrofGallery.Domain.Entities
 {
     public class GalleryItem
     {
