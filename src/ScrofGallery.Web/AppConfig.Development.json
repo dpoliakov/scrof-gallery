@@ -1,0 +1,5 @@
+﻿{
+  "DataSection": {
+    "DomainDBConnection": "Server=(localdb)\\mssqllocaldb;Database=ScrofGalleryDomain;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+}

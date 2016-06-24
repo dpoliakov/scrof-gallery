@@ -3,8 +3,19 @@ using ScrofGallery.Domain.Entities;
 
 namespace ScrofGallery.Web.DataAccess
 {
-    public class GalleryDbContext : DbContext
+    public sealed class GalleryDbContext : DbContext
     {
+        public GalleryDbContext()
+        {
+            Database.EnsureCreated();
+        }
+
         public DbSet<GalleryItem> GalleryItems { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder builder)
+        {
+            var connectionString = Startup.Configuration["DataSection:DomainDBConnection"];
+            builder.UseSqlServer(connectionString);
+        }
     }
 }

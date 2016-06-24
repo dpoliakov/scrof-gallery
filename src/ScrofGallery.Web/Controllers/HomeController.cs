@@ -1,15 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc;
+using ScrofGallery.Domain.DataAccess;
+using ScrofGallery.Web.DataAccess;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
 namespace ScrofGallery.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IGalleryItemRepository _itemRepository;
+
+        public HomeController(IGalleryItemRepository itemRepository)
+        {
+            _itemRepository = itemRepository;
+        }
+
         public IActionResult Index()
         {
+            var items = _itemRepository.GetAllItems();
+            //_context.GalleryItems.ToList();
             return View();
         }
 
