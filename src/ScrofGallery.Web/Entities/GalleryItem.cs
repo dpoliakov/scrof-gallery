@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ScrofGallery.Domain.Entities
+namespace ScrofGallery.Web.Entities
 {
     public class GalleryItem
     {
@@ -9,5 +9,6 @@ namespace ScrofGallery.Domain.Entities
         public string Description { get; set; }
         public DateTime CreationDate { get; set; }
         public double Price { get; set; }
+        public string ThumbnailPath { get; set; }
     }
 }

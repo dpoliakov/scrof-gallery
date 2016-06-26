@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ScrofGallery.Domain.Entities;
+using ScrofGallery.Web.Entities;
 
 namespace ScrofGallery.Web.DataAccess
 {

@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ScrofGallery.Domain.DataAccess;
 using ScrofGallery.Web.DataAccess;
-using System.Linq;
+using ScrofGallery.Web.Models;
 
 namespace ScrofGallery.Web.Controllers
 {
@@ -16,9 +15,8 @@ namespace ScrofGallery.Web.Controllers
 
         public IActionResult Index()
         {
-            var items = _itemRepository.GetAllItems();
-            //_context.GalleryItems.ToList();
-            return View();
+            var model = new GalleryModel { Items = _itemRepository.GetAllItems() };
+            return View(model);
         }
 
         public IActionResult About()

@@ -8,9 +8,10 @@ using ScrofGallery.Web.DataAccess;
 namespace ScrofGallery.Web.Migrations
 {
     [DbContext(typeof(GalleryDbContext))]
-    partial class GalleryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20160625074444_AddThumbnailPath")]
+    partial class AddThumbnailPath
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.0-rc2-20901")

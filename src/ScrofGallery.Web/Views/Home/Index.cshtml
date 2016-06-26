@@ -1,4 +1,6 @@
-﻿
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model ScrofGallery.Web.Models.GalleryModel
+
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -9,6 +11,19 @@
     <div class="col-lg-12">
         <h1 class="page-header">Gallery</h1>
     </div>
+
+    @foreach (var item in Model.Items)
+    {
+        <div class="col-lg-3 col-md-4 col-xs-6 thumbnail-wrapper">
+            <a href="#">
+                <div class="thumbnail">
+                    <img src= '@item.ThumbnailPath' />
+                </div>
+                <h3>@item.Name</h3>
+                <p>@item.Description</p>
+            </a>
+        </div>
+    }
 
     <div class="col-lg-3 col-md-4 col-xs-6 thumbnail-wrapper">
         <a href="#">

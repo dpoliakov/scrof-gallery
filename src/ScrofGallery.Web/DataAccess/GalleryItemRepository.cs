@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Internal;
-using ScrofGallery.Domain.DataAccess;
-using ScrofGallery.Domain.Entities;
+using ScrofGallery.Web.Entities;
 
 namespace ScrofGallery.Web.DataAccess
 {

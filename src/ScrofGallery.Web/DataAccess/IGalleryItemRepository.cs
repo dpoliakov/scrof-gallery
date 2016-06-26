@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using ScrofGallery.Domain.Entities;
+using ScrofGallery.Web.Entities;
 
-namespace ScrofGallery.Domain.DataAccess
+namespace ScrofGallery.Web.DataAccess
 {
     public interface IGalleryItemRepository
     {

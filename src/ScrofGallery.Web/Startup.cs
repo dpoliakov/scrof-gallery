@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using ScrofGallery.Domain.DataAccess;
 using ScrofGallery.Web.Data;
 using ScrofGallery.Web.DataAccess;
+using ScrofGallery.Web.Migrations;
 using ScrofGallery.Web.Models;
 using ScrofGallery.Web.Services;
 
@@ -84,6 +84,8 @@ namespace ScrofGallery.Web
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            app.SeedData();
         }
     }
 }
