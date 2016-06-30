@@ -24,11 +24,25 @@ namespace ScrofGallery.Web.Migrations
 
             if (context.GalleryItems.Any())
             {
-                return;
+                foreach (var galleryItem in context.GalleryItems)
+                {
+                    context.GalleryItems.Remove(galleryItem);
+                }
+
+                context.SaveChanges();
             }
 
-            AddGalleryItem(context, "Mona Lisa", "half - length portrait of a woman", "1/1/1517", 100500, "~/images/GalleryContent/Previews/mona-lisa.jpg");
-            AddGalleryItem(context, "Temptation of St. Anthony", " oil on canvas", "1/1/1945", 100500, "~/images/GalleryContent/Previews/salvador-dali-the-temptation-of-st--anthony.jpg");
+            AddGalleryItem(context, "Mona Lisa", "half - length portrait of a woman", "1/1/1517", 100501, "/images/GalleryContent/Previews/mona_lisa_original.jpg");
+            AddGalleryItem(context, "Temptation of St. Anthony", " oil on canvas", "1/1/1945", 100500, "/images/GalleryContent/Previews/salvador-dali-the-temptation-of-st--anthony.jpg");
+            AddGalleryItem(context, "Gold Woman", "oil on canvas", "1/1/1827", 8790, "/images/GalleryContent/Previews/images2TRCUBIE.jpg");
+
+            AddGalleryItem(context, "Temptation of St. Anthony", " oil on canvas", "1/1/1945", 100500, "/images/GalleryContent/Previews/salvador-dali-the-temptation-of-st--anthony.jpg");
+            AddGalleryItem(context, "Gold Woman", "oil on canvas", "1/1/1827", 8790, "/images/GalleryContent/Previews/images2TRCUBIE.jpg");
+            AddGalleryItem(context, "Mona Lisa", "half - length portrait of a woman", "1/1/1517", 100501, "/images/GalleryContent/Previews/mona_lisa_original.jpg");
+
+            AddGalleryItem(context, "Gold Woman", "oil on canvas", "1/1/1827", 8790, "/images/GalleryContent/Previews/images2TRCUBIE.jpg");
+            AddGalleryItem(context, "Temptation of St. Anthony", " oil on canvas", "1/1/1945", 100500, "/images/GalleryContent/Previews/salvador-dali-the-temptation-of-st--anthony.jpg");
+
 
             context.SaveChanges();
         }
