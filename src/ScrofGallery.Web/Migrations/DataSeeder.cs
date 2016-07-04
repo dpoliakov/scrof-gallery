@@ -32,17 +32,21 @@ namespace ScrofGallery.Web.Migrations
                 context.SaveChanges();
             }
 
-            AddGalleryItem(context, "Mona Lisa", "half - length portrait of a woman", "1/1/1517", 100501, "/images/GalleryContent/Previews/mona_lisa_original.jpg");
+            AddGalleryItem(context, "Mona Lisa", "half - length portrait of a woman", "1/1/1517", 100501, "/images/GalleryContent/Previews/mona-lisa.jpg");
             AddGalleryItem(context, "Temptation of St. Anthony", " oil on canvas", "1/1/1945", 100500, "/images/GalleryContent/Previews/salvador-dali-the-temptation-of-st--anthony.jpg");
-            AddGalleryItem(context, "Gold Woman", "oil on canvas", "1/1/1827", 8790, "/images/GalleryContent/Previews/images2TRCUBIE.jpg");
+            AddGalleryItem(context, "Ancient", " oil on canvas", "1/1/2016", 10000, "/images/GalleryContent/Previews/ancient.jpg");
+            AddGalleryItem(context, "Glasses", "oil on canvas", "1/1/1827", 8790, "/images/GalleryContent/Previews/glasses.jpg");
 
+
+            AddGalleryItem(context, "Mona Lisa", "half - length portrait of a woman", "1/1/1517", 100501, "/images/GalleryContent/Previews/mona-lisa.jpg");
             AddGalleryItem(context, "Temptation of St. Anthony", " oil on canvas", "1/1/1945", 100500, "/images/GalleryContent/Previews/salvador-dali-the-temptation-of-st--anthony.jpg");
-            AddGalleryItem(context, "Gold Woman", "oil on canvas", "1/1/1827", 8790, "/images/GalleryContent/Previews/images2TRCUBIE.jpg");
-            AddGalleryItem(context, "Mona Lisa", "half - length portrait of a woman", "1/1/1517", 100501, "/images/GalleryContent/Previews/mona_lisa_original.jpg");
+            AddGalleryItem(context, "Ancient", " oil on canvas", "1/1/2016", 10000, "/images/GalleryContent/Previews/ancient.jpg");
+            AddGalleryItem(context, "Glasses", "oil on canvas", "1/1/1827", 8790, "/images/GalleryContent/Previews/glasses.jpg");
 
-            AddGalleryItem(context, "Gold Woman", "oil on canvas", "1/1/1827", 8790, "/images/GalleryContent/Previews/images2TRCUBIE.jpg");
+            AddGalleryItem(context, "Mona Lisa", "half - length portrait of a woman", "1/1/1517", 100501, "/images/GalleryContent/Previews/mona-lisa.jpg");
             AddGalleryItem(context, "Temptation of St. Anthony", " oil on canvas", "1/1/1945", 100500, "/images/GalleryContent/Previews/salvador-dali-the-temptation-of-st--anthony.jpg");
-
+            AddGalleryItem(context, "Ancient", " oil on canvas", "1/1/2016", 10000, "/images/GalleryContent/Previews/ancient.jpg");
+            AddGalleryItem(context, "Glasses", "oil on canvas", "1/1/1827", 8790, "/images/GalleryContent/Previews/glasses.jpg");
 
             context.SaveChanges();
         }

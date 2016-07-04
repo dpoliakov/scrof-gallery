@@ -48,12 +48,24 @@ textarea {
     min-height: 100px;
 }
 
-.navbar-default {
-    background: #008080;
+.navbar-brand {
+    margin-top:-40px;
+    margin-right: 30px;
 }
 
-.navbar-default .navbar-brand {
+.navbar-brand .name-frst {
     color: #000000;
+    text-shadow: -5px 0 #000000, 0 6px #000000, 4px 0 black, 0 -6px black;
+    font: 80px 'Indie Flower';
+}
+
+.navbar-brand .name-scnd {
+    color: #ffdab9;
+    font: 30px 'Poiret One';
+}
+
+.navbar-default {
+    background: #12455B;
 }
 
 .thumbnail-wrapper {
@@ -63,13 +75,12 @@ textarea {
 
 .thumbnail {
     padding: 15px;
-    
     -ms-border-radius: 6px;
     border-radius: 6px;
     text-decoration: none;
-    text-align: center;
 }
 
 .thumbnail img {
-    max-height: 330px;
+    vertical-align: middle;
+    max-height: 200px;
 }
